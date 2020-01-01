@@ -1,0 +1,15 @@
+Pin:
+GPIO23 - Light Sensor
+GPIO12 - Temp signal
+GPIO25 - Menu Button
+GPIO8 - Up Button
+GPIO7 - Down Button
+GPIO1 - Confirm
+GPIO21 - Relay
+
+3.3V - VCC Oled
+GPIO3 - SCL (giallo)
+GPIO2 - SDA (verde)
+
+GPIO14 - Tx (Giallo (RX))
+GPIO15 - RX (Verde (TX))
