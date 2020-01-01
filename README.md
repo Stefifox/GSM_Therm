@@ -4,7 +4,7 @@ A Raspberry Pi Thermostat
 
 Info: the code comment and print text are in Italian.
 
-## Requirements
+### Requirements
 
 - Hardware
     - Raspberry Pi
@@ -13,9 +13,9 @@ Info: the code comment and print text are in Italian.
     - 4 Buttons
     
 - Software
-    - Raspian OS
+    - Raspbian OS
  
-## Installations
+### Installations
 
 Clone this repo:
 ```
@@ -27,5 +27,9 @@ Install project requirements:
 ```
 pip install -r requirements.txt
 ```
+If you have multiple installations of python
+```
+pip3 install -r requirements.txt
+```
 
-If you have a problem with any library please follow the instruction showed on terminal.
+###### If you have a problem with any library please follow the instruction showed on terminal.

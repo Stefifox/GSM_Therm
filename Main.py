@@ -1,5 +1,3 @@
-from typing import re
-
 import Adafruit_DHT
 from gpiozero import Button, LED
 from time import sleep
