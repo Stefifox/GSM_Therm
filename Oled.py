@@ -5,7 +5,6 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 import time
-import Adafruit_GPIO.SPI as SPIsudos
 
 from gpiozero import CPUTemperature
 
@@ -64,8 +63,9 @@ def err(text, temp):
     draw = ImageDraw.Draw(image)
     sleep(0.1)
 
-    draw.text((x, top), "Notifica", font=font, fill=255)
+    draw.text((x, top), "! Notifica !", font=font, fill=255)
     draw.text((x + 64, top), str(time.strftime("%H:%M")), font=font, fill=255)
+    draw.text((x + 100, top + 24), "!", font=fontBig, fill=255)
     draw.text((x, top + 8), "CPU Temp: " + str(cpu.temperature) + " °C", font=font, fill=255)
 
     draw.text((x, top + 16), "Errore: ", font=font, fill=255)
@@ -100,7 +100,7 @@ def welcome(vers):
     disp.clear()
     disp.display()
 
-    image = Image.open('./pi_logo.png').convert('1')
+    image = Image.open('./IMG/pi_logo.png').convert('1')
     draw = ImageDraw.Draw(image)
     draw.text((x, top), "powered by Raspbian", font=font, fill=255)
 

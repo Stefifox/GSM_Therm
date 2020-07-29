@@ -30,7 +30,7 @@ x = 0
 font = ImageFont.load_default()
 
 # Code here
-sver = "0.4"
+sver = "0.4a"
 
 screenOn = Button(23)
 
